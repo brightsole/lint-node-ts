@@ -1,0 +1,28 @@
+{
+  "name": "@brightsole/eslint-config-lint-node-ts",
+  "version": "0.0.0",
+  "description": "extends lint-node to use ts plugin/parser",
+  "main": "index.js",
+  "repository": "git@github.com:brightsole/lint-node-ts.git",
+  "author": "Drew Showalter <maelstroswim@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo 'lol no tests'",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@brightsole/eslint-config-lint-node": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "eslint-import-resolver-typescript": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.4"
+  },
+  "peerDependencies": {
+    "typescript": "^3.6.4"
+  }
+}
