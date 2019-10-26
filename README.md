@@ -4,10 +4,10 @@
 
 ### What is it?
 <details>
-<summary>tl;dr: eslint & prettier setup for node projects</summary>
+<summary>tl;dr: eslint & prettier setup for ts node projects</summary>
 <br />
 
-A thin wrapper around `@brightsole/lint-node` that supports `ts`
+A thin wrapper around `@brightsole/lint-node` that supports `ts`. Apparently up is now down, and I've taken leave of my senses and am adding `ts` to personal projects. THE END IS NIGH
 
 </details>
 <br/>
@@ -32,8 +32,6 @@ Then, all that's left is to add a script for linting, like the one in this repo:
   "scripts": { "lint": "eslint . --fix" },
   ...
 ```
-
-##### That's pretty much it
 
 </details>
 <br/>
