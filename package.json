@@ -1,6 +1,6 @@
 {
   "name": "@brightsole/eslint-config-lint-node-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "extends lint-node to use ts plugin/parser",
   "main": "index.js",
   "repository": "git@github.com:brightsole/lint-node-ts.git",
