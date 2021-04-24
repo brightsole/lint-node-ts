@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['@brightsole/lint-node', 'prettier', 'prettier/@typescript-eslint'],
+  extends: ['@brightsole/lint-node', 'prettier'],
   plugins: ['import', '@typescript-eslint', 'prettier'],
   settings: {
     'import/resolver': {
@@ -9,6 +9,13 @@ module.exports = {
     },
   },
   rules: {
-    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.{js,ts}'] }]
-  }
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.{js,ts}'] }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: '^_',
+      },
+    ],
+  },
 };
